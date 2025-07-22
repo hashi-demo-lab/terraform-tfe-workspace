@@ -10,10 +10,9 @@ module "workspace" {
 
   name         = "example"
   organization = "my-org"
-
-  tfe_token    = "token"
 }
 ```
+The TFE provider reads the authentication token from the `TFE_TOKEN` environment variable.
 
 ## Inputs
 
@@ -22,7 +21,6 @@ module "workspace" {
 | name | Name of the workspace to create. | string | n/a |
 | organization | The name of the organization owning the workspace. | string | n/a |
 | tfe_hostname | Hostname of the Terraform Enterprise/Cloud instance. | string | null |
-| tfe_token | Authentication token for the Terraform Enterprise/Cloud instance. | string | n/a |
 | terraform_version | Optional Terraform version for the workspace. | string | null |
 | execution_mode | Workspace execution mode (remote or local). | string | "remote" |
 

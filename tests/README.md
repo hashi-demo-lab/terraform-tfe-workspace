@@ -1,3 +1,3 @@
 # Tests
 
-This module includes basic pre-commit hooks for validation.
+Run `terraform test` to execute the tests.

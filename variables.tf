@@ -4,12 +4,6 @@ variable "tfe_hostname" {
   default     = null
 }
 
-variable "tfe_token" {
-  description = "Authentication token for the Terraform Enterprise/Cloud instance."
-  type        = string
-  sensitive   = true
-}
-
 variable "organization" {
   description = "The name of the organization owning the workspace."
   type        = string
